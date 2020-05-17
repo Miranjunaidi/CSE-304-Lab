@@ -77,8 +77,13 @@ A)  Consider the COMPANY database schema shown in the figure.
 Create a view that has department name, manager name and manager salary for every department.
 Create a view that  has project name, controlling depart name, number of employees, and total hours worked per week on the project for each project with more than one employee working on it.
 Create an updateable view for the relation DEPARTMENT
-B)       Create a materialized view for finding average salary of employees, average salary of managers, average salary for each department and department(s) which spend more money on salary for the employees.
-C)     Assume that Dno of EMPLOYEE relation has got NOT NULL constraint. Write a transaction which inserts tuples in to the relations EMPLOYEE and DEPARTMENT without affecting integrity constraints specified in the schema. 
+
+B)Create a materialized view for finding average salary of employees, average salary of managers, average salary for each department and department(s) which spend more money on salary for the employees.
+
+C)Assume that Dno of EMPLOYEE relation has got NOT NULL constraint. Write a transaction which inserts tuples in to the relations EMPLOYEE and DEPARTMENT without affecting integrity constraints specified in the schema. 
+
+
+
 A) Consider the following relations:
 instructor(ID, name, dept_name, salary)
 section(course_id, sec_ id, semester, year, building, room_ number, time_slot_id)
@@ -86,7 +91,8 @@ teaches(ID, course_id, sec_id, semester, year)
 Write assertions for the following: 
 An instructor cannot teach in two different classrooms in a semester in the same slot
 An instructor cannot teach more than one course for the same semester 
-B)   Consider the following relations. 
+
+B)Consider the following relations. 
 product(maker, model, type)
 pc(model, speed, ram, hd, price )
 laptop(model, speed, ram, hd, screen , price )
@@ -96,6 +102,8 @@ Write triggers for the following:
 (b) When inserting a new printer, check that the model number exists in product.
 (c)  When making any modification to the Laptop relation, check that the average price of laptops for each manufacturer is at least Rs 1500. 
 C)  Consider the following relations. 
+
+
 emp(eno,ename,eage, salary,departno,supereno), dep(depno,depname,depage,eno), depart(departno,departname,location)
 Write stored procedures 
 to find the average salary of employees who have got more than two  dependents  
